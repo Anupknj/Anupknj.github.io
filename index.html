@@ -13,30 +13,43 @@
       
   }
 
+   @media screen and (max-width: 1200px) {
+     /* start of large tablet styles */
+     .img-responsive {
+       max-width: 50%;
+     }
+}
+
+  @media screen and (max-width: 900px) {
+     /* start of large tablet styles */
+     .img-responsive {
+       max-width: 55%;
+     }
+}
+
+@media screen and (max-width : 650px){
+	.img-reponsive{
+		max-width : 40%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+     /* start of medium tablet styles */
+     /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+     .img-responsive {
+       max-width: 35%;
+     }
+}
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+     /* It's possible to hide the image if the screen becomes too small */
+     .img-responsive {
+       max-width: 30%;
+     }
+}
+
   
-
-.bg { 
-    /* The image used */
-    background-image: src("photo.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-   #section1,#section2,#section3,#section41,#section42,#section5{
-    
-    width: 95%;
-    border: 2px solid black;
-    padding: 250px;
-    margin: 25px;
-}
-
-
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -77,7 +90,7 @@
   <div class="col-sm-2">
   </div>
   <div class="col-sm-3">
-  <img id="myImg" class="img-responsive img-thumbnail" src="photo.jpg" alt="Anupkumar" style="max-width:300;max-height:150 ">
+  <img id="myImg" class="img-responsive img-thumbnail " src="https://raw.githubusercontent.com/Anupknj/Anupknj.github.io/master/Photo.jpg" alt="Anupkumar" style="max-width:300;max-height:150 ">
 
 </div>
   <div class="container col-sm-7">
